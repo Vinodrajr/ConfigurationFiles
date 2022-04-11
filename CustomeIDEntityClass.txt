@@ -1,0 +1,11 @@
+@Entity
+public class Bike {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "bike")
+	@GenericGenerator(name = "bike", strategy = "com.ty.bike_app_boot.BikeID", parameters = {
+			@Parameter(name = BikeID.INCREMENT_PARAM, value = "1"),
+			@Parameter(name = BikeID.VALUE_PREFIX_PARAMETER, value = "B"),
+			@Parameter(name = BikeID.NUMBER_FORMAT_PARAMETER, value = "%05d") })
+	private String id;
+}
