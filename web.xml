@@ -12,3 +12,12 @@
 
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+
+
+	<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
